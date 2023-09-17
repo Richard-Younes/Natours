@@ -6,7 +6,7 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 
-		<link rel="stylesheet" href="./css/icon-font.css" />
+		<!-- <link rel="stylesheet" href="./css/icon-font.css" /> -->
 		<link rel="stylesheet" href="css/icon-font.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
@@ -14,6 +14,33 @@
 		<title>Natours | Exciting tours for adventurous people</title>
 	</head>
 	<body>
+		<div class="navigation">
+			<input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+			<label for="navi-toggle" class="navigation__button"><span class="navigation__icon"></span></label>
+
+			<div class="navigation__background">&nbsp;</div>
+
+			<nav class="navigation__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link"><span>01</span> About Natours</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link"><span>02</span> Your benefits</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link"><span>03</span>Popular tours</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link"><span>04</span> Stories </a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link"><span>05</span> Book now </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
 		<header class="header">
 			<div class="header__logo-box">
 				<img src="./img/logo-white.png" alt="Logo" class="header__logo" />
@@ -23,7 +50,7 @@
 					<span class="heading-primary--main"> Outdoors </span>
 					<span class="heading-primary--sub"> is where life happens </span>
 				</h1>
-				<a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+				<a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
 			</div>
 		</header>
 
@@ -49,9 +76,26 @@
 					</div>
 					<div class="col-1-of-2">
 						<div class="composition">
-							<img src="./img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1" />
-							<img src="./img/nat-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2" />
-							<img src="./img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3" />
+							<img
+								srcset="./img/nat-1.jpg 300w, ./img/nat-1-large.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 1"
+								class="composition__photo composition__photo--p1"
+								src="./img/nat-1-large.jpg" />
+
+							<img
+								srcset="./img/nat-2.jpg 300w, ./img/nat-2-large.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 2"
+								class="composition__photo composition__photo--p2"
+								src="./img/nat-2-large.jpg" />
+
+							<img
+								srcset="./img/nat-3.jpg 300w, ./img/nat-3-large.jpg 1000w"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								alt="Photo 3"
+								class="composition__photo composition__photo--p3"
+								src="./img/nat-3-large.jpg" />
 						</div>
 					</div>
 				</div>
@@ -93,7 +137,7 @@
 				</div>
 			</section>
 
-			<section class="section-tours">
+			<section class="section-tours" id="section-tours">
 				<div class="u-center-text u-margin-bottom-big">
 					<h2 class="heading-secondary">Most popular tours</h2>
 				</div>
@@ -121,7 +165,7 @@
 										<p class="card__price-value">$297</p>
 									</div>
 
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -148,7 +192,7 @@
 										<p class="card__price-value">$497</p>
 									</div>
 
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -175,7 +219,7 @@
 										<p class="card__price-value">$897</p>
 									</div>
 
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -319,7 +363,70 @@
 			</div>
 		</section> -->
 		<footer class="footer">
-			<div class="footer__logo-box"></div>
+			<div class="footer__logo-box">
+				<picture class="footer__logo">
+					<source srcset="./img/logo-green-small-1x.png 1x, ./img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)" />
+					<img srcset="./img/logo-green-1x.png 1x, ./img/logo-green-2x.png 2x" alt="Full logo" src="./img/logo-green-2x.png" />
+				</picture>
+			</div>
+			<div class="row">
+				<div class="col-1-of-2">
+					<div class="footer__navigation">
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Company</a>
+							</li>
+
+							<li class="footer__item">
+								<a href="#" class="footer__link">Contact us</a>
+							</li>
+
+							<li class="footer__item">
+								<a href="#" class="footer__link">Careers</a>
+							</li>
+
+							<li class="footer__item">
+								<a href="#" class="footer__link">Privacy policy</a>
+							</li>
+
+							<li class="footer__item">
+								<a href="#" class="footer__link">Terms</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-1-of-2">
+					<p class="footer__copyright">
+						Built by <a href="https://www.linkedin.com/in/younes-richard/" class="footer__link">Richard Younes</a> after taking an online course
+						<a href="https://www.udemy.com/course/advanced-css-and-sass/" class="footer__link">Advanced CSS and SASS</a>. Copyright &copy; by Jonas Schmedtmann. A credit to the original author,
+						<a href="https://codingheroes.io/" class="footer__link">Jonas Schmedtmann!</a>
+					</p>
+				</div>
+			</div>
 		</footer>
+
+		<div class="popup" id="popup">
+			<div class="popup__content">
+				<div class="popup__left">
+					<img src="./img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+
+					<img src="./img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+				</div>
+				<div class="popup__right">
+					<a href="#section-tours" class="popup__close">&times;</a>
+
+					<h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+
+					<h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+					<p class="popup__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facilis a voluptatem ipsa repudiandae, consectetur obcaecati iste fuga quod quae architecto porro tempora beatae minus, in
+						deleniti? Excepturi, debitis voluptates. Unde nisi totam magnam esse veritatis voluptatibus vel? Voluptatibus sapiente blanditiis minima. Porro a beatae voluptate magnam itaque neque
+						corporis eaque facere veniam! Quisquam cupiditate pariatur asperiores corrupti animi et. Eum culpa aperiam eius minus recusandae earum tempora, alias magnam quia enim voluptatibus unde
+						fuga optio sed numquam asperiores distinctio. Rem quaerat nobis, voluptatum rerum voluptates ut corporis error hic.
+					</p>
+					<a href="#" class="btn btn--green">Book now</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
