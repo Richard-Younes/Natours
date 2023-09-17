@@ -20,12 +20,9 @@ Welcome to Natours, your platform for discovering thrilling and unforgettable na
 
 We welcome contributions! If you'd like to contribute to Natours, please fork the repository and create a pull request with your changes.
 
-## License
-
-This project is licensed under the [License Name] License - see the [LICENSE.md](link-to-license-file) file for details.
-
 ## Author
 
 - Richard Younes
+- Jonas Schmedtmann
 
 Thank you for choosing Natours for your adventure needs. Get ready to embark on an incredible journey into the heart of nature!
