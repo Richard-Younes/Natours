@@ -14,7 +14,7 @@ Welcome to Natours, your platform for discovering thrilling and unforgettable na
 
 ## Technologies Used
 
-- Frontend: HTML, CSS.
+- Frontend: HTML, CSS, SASS.
 
 ## Contributing
 
